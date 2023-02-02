@@ -20,3 +20,17 @@
     object-fit: contain;
     height: 150px;
 }
+
+
+.login__error{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.login__errorCode,.login__errorMessage{
+font-size: medium;
+font-weight: 500;
+color: red;
+margin: 10px;
+}

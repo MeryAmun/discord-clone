@@ -54,6 +54,11 @@ color:#4fb185;
 flex: 1;
 padding: 10px;
 }
+.logout{
+padding: 5px;
+color:#4fb185;
+cursor: pointer;
+}
 .sidebar__voiceInfo > h3{
     color:#4fb185;
 }
