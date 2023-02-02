@@ -1,11 +1,14 @@
 import React from 'react';
-import './sidebarChannels.css'
+import './sidebarChannels.css';
 
-const SidebarChannels = ({ id, channel}) =>  { 
+
+
+const SidebarChannels = ({ id, channelName}) =>  { 
+
   return (
     <div className='sidebarChannel'>
-      <h4>
-        <span className="sidebarChannel__hash">#</span>YouTube
+      <h4 key={id}>
+        <span className="sidebarChannel__hash">#</span>{channelName}
       </h4>
     </div>
   )
