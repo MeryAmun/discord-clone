@@ -1,5 +1,5 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import { fetchCount } from './userAPI';
+import {  createSlice } from '@reduxjs/toolkit';
+
 
 
 
@@ -23,5 +23,5 @@ export const userSlice = createSlice({
 });
 
 export const { login, logout } = userSlice.actions;
-export const user = (state) => state.user.user;
+export const selectUser = (state) => state.user.user;
 export default userSlice.reducer;

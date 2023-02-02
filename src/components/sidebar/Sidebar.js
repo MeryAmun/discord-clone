@@ -10,8 +10,12 @@ import Avatar from '@mui/material/Avatar';
 import MicIcon from '@mui/icons-material/Mic';
 import HeadsetIcon from '@mui/icons-material/Headset';
 import SettingsIcon from '@mui/icons-material/Settings';
+import { useSelector } from 'react-redux';
+import { selectUser } from "../../features/userSlice";
 
 const Sidebar = () => {
+  const user = useSelector(selectUser)
+  console.log(user)
   return (
     <div className="sidebar">
       <div className="sidebar__top">
