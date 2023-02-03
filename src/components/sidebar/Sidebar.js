@@ -16,9 +16,7 @@ import { auth, db } from "../../firebase";
 import {
   collection,
   query,
-  orderBy,
   onSnapshot,
-  getDocs,
   addDoc,
 } from "firebase/firestore";
 
@@ -26,11 +24,6 @@ const Sidebar = () => {
   const [channels, setChannels] = useState([]);
   const { displayName, uid, photo } = useSelector(selectUser);
 
-  const getChannels = async () => {
-    const channelsSnapshot = await getDocs(collection(db, "channels"));
-    const channelsList = channelsSnapshot.docs.map((doc) => doc.data());
-    setChannels(channelsList);
-  };
 
   useEffect(() => {
     const q = query(collection(db, "channels"));
