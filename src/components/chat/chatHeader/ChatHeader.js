@@ -7,14 +7,14 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import SendRoundedIcon from "@mui/icons-material/SendRounded";
 import HelpRoundedIcon from "@mui/icons-material/HelpRounded";
 
-const ChatHeader = ({channelName}) => {
+const ChatHeader = ({ channelName }) => {
   return (
     <div className="chatHeader">
       <div className="chatHeader__left">
         <h1>
           {" "}
           <span className="chatHeader__hash">#</span>
-         {channelName}
+          {channelName}
         </h1>
       </div>
       <div className="chatHeader__right">
