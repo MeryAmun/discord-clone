@@ -23,7 +23,6 @@ const Sidebar = () => {
  const getChannels = async () => {
     const channelsSnapshot = await getDocs(collection(db, "channels"));
     const channelsList = channelsSnapshot.docs.map((doc) => doc.data());
-    console.log(channelsList)
     setChannels(channelsList);
   }
 
@@ -37,7 +36,7 @@ const Sidebar = () => {
      })))
    })
   }, [])
-  console.log(channels)
+
 
 
   const handleAddChannel = async () => {
